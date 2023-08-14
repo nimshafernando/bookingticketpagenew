@@ -36,7 +36,7 @@ function updatepaybutton() {
   const expiaryvalidator = /^(0[1-9]|1[0-2])\/\d{2}$/;
   const Expiarydatevalid = expiaryvalidator.test(expiarydate);
   if (!Expiarydatevalid) {
-    onError(expiryDateInput, "Invalid expiary date (use MM/YY format)");
+    onError(expiryDateInput, "Invalid expiry date (use MM/YY format)");
   } else {
     const [month, year] = expiarydate.split('/');
     const currentDate = new Date();
